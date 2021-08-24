@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="weather.css">
+</head>
+
+<body>
+    <div id="container">
+        <div>
+            <h1 class="heading">Weather App</h1>
+        </div>
+            <div id="content-container">
+            <div class="box">
+                <input type="text" name="city" id="inputCity" class="input-box" placeholder="Enter Your City"><br>
+                <button id="weatherBtn" class="btn">Today's weather</button><br>
+                <button id="currentLctBtn" class="btn">Your Location</button><br>
+            </div>
+            <div id="infoBox">
+                <div class="temp_type">
+                    <p><span id="temp"></span></p>
+                    <img alt="weatherType" id="icon">
+                </div>
+                <p id="message"></p>
+
+                <p>Clouds: <span id="clouds"></span></p>
+                <p>Sunrise: <span id="sunrise"></span></p>
+                <p>Sunset: <span id="sunset"></span></p>
+                <div id="map"></div>
+                <div id="loading"></div>
+
+            </div>
+            </div>
+    </div>
+
+
+    <script src="index.js"></script>
+    <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDsitEMYNMGoabv_lThoJBS5gjp_W6ADxQ"></script>
+
+
+</body>
+
+</html>
